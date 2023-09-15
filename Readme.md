@@ -30,3 +30,10 @@ Primeiro a entrar, primeiro a sair
 # Filas de prioridade
 - Os itens são ordenados por valor-chave, de modo que o item com a chave mais baixa/alta esteja sempre na frente.
 - Elementos de alta prioridade são colocados no início da fila, de média prioridade no meio da fila e elementos de baixa prioridade no final da fila.
+
+# Deques (Double ended queue)
+- Suporta operações de pilhas e filas
+- Agendamento de tarefas de vários processos
+- Adicionar no início, remover do início
+- Adicionar no final, remover do final
+- Implementações estáticas e circulares
