@@ -86,3 +86,16 @@ Mostrar a lista e Pesquisar
 Excluir da posição
 - O nó a ser eliminado deve ser localizado (pesquisado)
 - Quando elimina o nó atual, terá que conectar o nó anterior ao nó seguinte
+
+# Listas encadeadas com extremidades duplas
+
+- Possui referência para o primeiro e para o último nó
+- Para inserir um nó no final de uma lista com extemidade simples, é necessário percorrer todos os elementos
+- A referência para o último nó permite inserir um novo nó diretamente no final da lista, assim como no início
+
+# Operações
+
+- Inserir no início
+- Inserir no final (Adicional)
+- Excluir do início
+
