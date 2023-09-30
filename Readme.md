@@ -65,6 +65,9 @@ Lista (Relacionamento)
 - Cada elemento da lista referencia o próximo e só é alocado dinamicamente quando necessário
 - Para referenciar o primeiro elemento é utilizado um elemento chamado cabeça da lista
 
+- Problemas das listas encadeadas simples:
+Um comando atual = atual.proximo vai para o próximo nó, mas não há maneira correspondente de ir para o nó anterior
+
 # Listas encadeadas operações
 Insere no início
 - Insere um novo nó no início da lista
@@ -99,3 +102,8 @@ Excluir da posição
 - Inserir no final (Adicional)
 - Excluir do início
 
+# Listas duplamente encadeadas
+
+- Permite percorrer a lsita para trás, assim como para frente.
+- Cada nó tem duas referências para outros nós, ao invés de uma
+- A primeira referência é para o próximo nó e a segunda é para o nó anterior
