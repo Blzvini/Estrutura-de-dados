@@ -17,28 +17,24 @@ def pesquisa_binaria(lista, item):
             baixo = meio + 1
     return None, tentativas
 
-# %%
 
-lista = []
-cont = 0
+def criar_lista(tamanho):
+    lista = list(range(tamanho))
+    return lista
 
-tamanho_lista = int(input('Informe o tamanho da lista: '))
 
-while cont < tamanho_lista:
-    lista.append(cont)
-    cont+=1
+def main():
+    tamanho_lista = int(input('Informe o tamanho da lista: '))
+    lista = criar_lista(tamanho_lista)
 
-print(lista)
+    item = int(input('Informe um número para ser buscado na lista: '))
+    posicao, tentativas = pesquisa_binaria(lista, item)
 
-#%%
-item = int(input('Informe um número para ser buscado na lista: '))
-posicao, tentativas = pesquisa_binaria(lista, item)
-
-if posicao is not None:
-    posicao += 1
-    print(f"Item: {item} encontrado na posição {posicao} após {tentativas} tentativas.")
-else:
-    print(f"Item {item} não encontrado após {tentativas} tentativas.")
+    if posicao is not None:
+        posicao += 1  # Adiciona 1 para torná-lo uma posição humana
+        print(f"Item: {item} encontrado na posição {posicao} após {tentativas} tentativas.")
+    else:
+        print(f"Item {item} não encontrado após {tentativas} tentativas.")
 
 
 # %%
